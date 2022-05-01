@@ -10,9 +10,9 @@ def get_data():
     # Questions to ask user
     layout = [[sg.Text('Wellness Log', font="bold")],
               [sg.Text("1. How are you feeling?"), sg.Combo(values=[
-                  "Bad : (",
-                  "Okay : |",
-                  "Good : )"
+                  "Bad",
+                  "Okay",
+                  "Good"
               ], size=50)],
               [sg.Text("2. Have you eaten enough today?"), sg.Checkbox("")],
               [sg.Text("3. Have you drank enough water?"), sg.Checkbox("")],
