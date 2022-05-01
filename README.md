@@ -1,0 +1,1 @@
+To run this project, you will need to add a credentials.json file to the root folder. It should contain your Google project API keys. [Check out this guide for how to do this.](https://developers.google.com/workspace/guides/create-credentials)
