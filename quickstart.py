@@ -42,7 +42,6 @@ def start_authentication():
         return service
 
     except HttpError as error:
-        # TODO(developer) - Handle errors from drive API.
         print(f'An error occurred: {error}')
 
 
@@ -111,6 +110,8 @@ def get_document_data():
         doc_text = doc_text.replace('\u201c', '"')
         doc_text = doc_text.replace('\u201d', '"')
         info.close()
+        if doc_text == "":
+            doc_text = "[]"
     return eval(f'{doc_text}')
 
 

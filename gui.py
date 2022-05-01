@@ -4,6 +4,7 @@ import PySimpleGUI as sg
 
 import quickstart
 
+
 def get_data():
     sg.theme('LightBlue3')  # Window Design
     # Questions to ask user
@@ -19,7 +20,7 @@ def get_data():
               [sg.Text("5. Did you leave the house today?"), sg.Checkbox("")],
               [sg.Text("6. How has your day been from a scale of 1-10?"),
                sg.InputText()],
-              [sg.Text("7. List 3 things that were good about today:"),
+              [sg.Text("7. Note thing that was good about today:"),
                sg.InputText()],
               [sg.Text("8. Note 1 thing you would change:"), sg.InputText()],
               [sg.Text(size=(40, 1), key='-OUTPUT-')],
@@ -113,5 +114,3 @@ def open_history_window(wellness_history):
             break
 
     window.close()
-
-get_data()
